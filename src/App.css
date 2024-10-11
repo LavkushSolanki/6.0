@@ -206,9 +206,15 @@ body {
 
 /* Small Mobile (Max width: 480px) */
 @media (max-width: 480px) {
+  /* body{
+    margin-top: 30px;
+  } */
+  .event-grid{
+    margin-top: 20px;
+  }
   .event-poster {
-    height: auto;
-    width: 350px;
+    height: 330px;
+    width: 330px;
   }
 
   .explore-button {
