@@ -7,50 +7,49 @@ import EventDetails from './EventDetails';
 const eventData = [
   {
     posterUrl: '/images/img2.jpg', 
-    eventTitle: 'Ideathon', 
-    eventDate: '12th October 2024', 
+    eventTitle: 'Ideathon',  
     url: './events/ideathon.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: ' Build-a-Thon', 
-    eventDate: '15th October 2024', 
+    // eventDate: '15th October 2024', 
     url: './events/build-a-thon.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'Ad-Mad Show', 
-    eventDate: '18th October 2024', 
+    // eventDate: '18th October 2024', 
     url: './events/ad_mad_show.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'Panel Discussion', 
-    eventDate: '20th October 2024', 
+    // eventDate: '20th October 2024', 
     url: './events/panel_discussion.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'Start-Up Pitch', 
-    eventDate: '15th October 2024', 
+    // eventDate: '15th October 2024', 
     url: './events/start_up_pitch.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'Case Study', 
-    eventDate: '15th October 2024', 
+    // eventDate: '15th October 2024', 
     url: './events/case_study.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'Bidding War', 
-    eventDate: '15th October 2024', 
+    // eventDate: '15th October 2024', 
     url: './events/bidding_war.html',
   },
   {
     posterUrl: '/images/img2.jpg',
     eventTitle: 'The Sales Challenge', 
-    eventDate: '15th October 2024', 
+    // eventDate: '15th October 2024', 
     url: './events/the_sales_chalange.html',
   },
   // Additional events...
