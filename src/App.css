@@ -27,9 +27,8 @@ body {
 /* Event Card Styling */
 .event-card {
   background-color: #000000;
-  border: 4px solid #c4a287 ;
-  border-radius: 15px;
   overflow: hidden;
+  border-radius: 15px;
   transition: transform 0.5s ease;
   text-align: center;
   display: flex;
@@ -43,8 +42,6 @@ body {
 
 /* Poster */
 .event-poster {
-  margin: 3px 1px 3px 1px;
-  border-radius: 10px;
   width: 100%;
   height: 330px;
   object-fit: contain;
@@ -215,10 +212,8 @@ body {
     margin-top: 20px;
   }
   .event-poster {
-    margin-top: 5px;
-    height: 330px;
-    width: 100%;
-    border-radius: 15px;
+    height: 300px;
+    width: 300px;
   }
   .event-details h3 {
     font-size: 30px;
@@ -231,7 +226,7 @@ body {
   }
 
   .event-details-poster {
-    width: 90%;
+    width: 100%;
   }
 
   /* .event-details-date {
