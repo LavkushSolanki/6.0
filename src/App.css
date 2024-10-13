@@ -1,8 +1,6 @@
 /* General Styling */
 body {
   font-family: 'Anton SC', sans-serif;
-  font-weight: 300;
-  font-style: normal;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #4e030d 0%, #a41e30 50%, #030303 100%);
@@ -10,7 +8,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 /* Event Grid Styling */
@@ -26,14 +23,14 @@ body {
 
 /* Event Card Styling */
 .event-card {
-  background-color: #000000;
+  background-color: #000;
   overflow: hidden;
   border-radius: 15px;
   transition: transform 0.5s ease;
-  text-align: center;
   display: flex;
   flex-direction: column;
   width: 100%;
+  text-align: center;
 }
 
 .event-card:hover {
@@ -42,9 +39,9 @@ body {
 
 /* Responsive Poster */
 .event-poster {
-  width: 100%;  /* Full width of the parent container */
-  height: auto;  /* Maintain aspect ratio */
-  object-fit: cover;  /* Ensures the image covers the container without distortion */
+  width: 100%; /* Full width of the parent container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without distortion */
 }
 
 /* Event Details */
@@ -58,15 +55,9 @@ body {
   color: #db0c26;
 }
 
-/* .event-date {
-  font-size: 14px;
-  color: #DDD;
-  margin: 5px 0;
-} */
-
 .event-description {
   font-size: 16px;
-  color: #EEE;
+  color: #eee;
 }
 
 /* Explore Button */
@@ -104,27 +95,22 @@ body {
 
 .event-details-date {
   font-size: 24px;
-  color: #DDD;
+  color: #ddd;
 }
 
 .event-details-description {
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   margin-top: 10px;
 }
 
 /* Media Queries for Responsiveness */
 
-/* General Tablet (768px to 1024px, includes iPads) */
+/* General Tablet and Smaller Devices */
 @media (max-width: 1024px) {
   .event-grid {
-    grid-template-columns: 1fr 1fr; /* Two columns for iPads */
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
     padding: 10px;
-  }
-
-  .event-poster {
-    height: auto; /* Ensure it scales with aspect ratio */
-    width: 100%;  /* Full width of the parent container */
   }
 
   .explore-button {
@@ -137,19 +123,12 @@ body {
   }
 }
 
-/* iPad Pro (1024px to 1366px) */
+/* iPad Pro and Larger Tablets */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .event-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for larger tablets */
     gap: 30px;
-    padding: 20px;
   }
 
-  .event-poster {
-    width: 100%;  /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
   .explore-button {
     padding: 10px 20px;
     font-size: 14px;
@@ -160,17 +139,11 @@ body {
   }
 }
 
-/* iPad Air Portrait (820px to 1180px) */
+/* iPad Air Portrait */
 @media (min-width: 820px) and (max-width: 1180px) {
   .event-grid {
-    grid-template-columns: 1fr 1fr; /* Two columns */
     padding: 15px;
     gap: 40px;
-  }
-
-  .event-poster {
-    width: 100%;  /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
   }
 
   .explore-button {
@@ -183,17 +156,11 @@ body {
   }
 }
 
-/* Mobile Phones (Max width: 768px) */
+/* Mobile Phones */
 @media (max-width: 768px) {
   .event-grid {
     grid-template-columns: 1fr;
     padding: 10px;
-    gap: 40px;
-  }
-
-  .event-poster {
-    width: 100%;  /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
   }
 
   .explore-button {
@@ -206,15 +173,10 @@ body {
   }
 }
 
-/* Small Mobile (Max width: 480px) */
+/* Small Mobile */
 @media (max-width: 480px) {
   .event-grid {
     margin-top: 20px;
-  }
-
-  .event-poster {
-    width: 100%;  /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
   }
 
   .event-details h3 {
@@ -229,12 +191,8 @@ body {
   }
 
   .event-details-poster {
-    width: 100%;  /* Full width of the screen */
+    width: 100%; /* Full width of the screen */
   }
-
-  /* .event-details-date {
-    font-size: 14px;
-  } */
 
   .event-details-description {
     font-size: 16px;
