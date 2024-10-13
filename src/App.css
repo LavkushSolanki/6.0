@@ -40,11 +40,11 @@ body {
   transform: scale(1.06);
 }
 
-/* Poster */
+/* Responsive Poster */
 .event-poster {
-  width: 100%;
-  height: 330px;
-  object-fit: contain;
+  width: 100%;  /* Full width of the parent container */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: cover;  /* Ensures the image covers the container without distortion */
 }
 
 /* Event Details */
@@ -123,8 +123,8 @@ body {
   }
 
   .event-poster {
-    height: auto;
-    width: 500px;
+    height: auto; /* Ensure it scales with aspect ratio */
+    width: 100%;  /* Full width of the parent container */
   }
 
   .explore-button {
@@ -146,8 +146,8 @@ body {
   }
 
   .event-poster {
-    width: 100px;
-    height: auto;
+    width: 100%;  /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
   }
   
   .explore-button {
@@ -169,8 +169,8 @@ body {
   }
 
   .event-poster {
-    width: 420px;
-    height: auto;
+    width: 100%;  /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .explore-button {
@@ -192,8 +192,8 @@ body {
   }
 
   .event-poster {
-    height: auto;
-    width: 650px;
+    width: 100%;  /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .explore-button {
@@ -208,16 +208,19 @@ body {
 
 /* Small Mobile (Max width: 480px) */
 @media (max-width: 480px) {
-  .event-grid{
+  .event-grid {
     margin-top: 20px;
   }
+
   .event-poster {
-    /* height: 350px; */
-    width: 400px;
+    width: 100%;  /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
   }
+
   .event-details h3 {
     font-size: 30px;
   }
+
   .explore-button {
     margin-top: -10px;
     width: 50%;
@@ -226,7 +229,7 @@ body {
   }
 
   .event-details-poster {
-    width: 100%;
+    width: 100%;  /* Full width of the screen */
   }
 
   /* .event-details-date {
