@@ -4,7 +4,6 @@
   box-sizing: border-box;
   color: #c4a287;
 }
-
 body, html {
   margin: 0;
   padding: 0;
@@ -35,7 +34,7 @@ body, html {
 }
 .highlight {
   margin-left: 5px;
-  background-color: rgb(87, 5, 5); 
+  /* background-color: rgb(87, 5, 5);  */
   color: black; /* Black text color for 2024 */
   padding: 0 10px; /* Adds space around the text */
   border-radius: 5px; /* Optional: Rounded corners */
