@@ -1,0 +1,161 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cards per row like the image */
+  gap: 10px; /*Reduce gap between cards*/
+  padding: 20px;
+  justify-items: center;
+  align-items: start;
+  font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 330px; /* Increase width */
+  height: 550px; /* Increase height */
+  perspective: 1000px;
+  border: none;
+  margin: 10px 0px 5px 0px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #db0c26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background: rgb(201, 9, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(201, 9, 32, 1) 0%,
+    rgba(11, 11, 11, 1) 89%
+  );
+  color: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.flip-card-back h3 {
+  font-size: 1.75rem;
+  margin: 5px 0;
+}
+.flip-card-back img {
+  height: 360px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Reduce to 2 columns on smaller screens */
+  }
+  .flip-card {
+    width: 330px;
+    height: 370px;
+  }
+  .flip-card-back img {
+    height: 250px;
+    width: 230px;
+  }
+  .flip-card-back h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.5rem;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack the cards on very small screens */
+  }
+}
+
+.polygon-border-about {
+  position: relative;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0b0b0b 0%, #c70920 89%);
+  border: 2px solid red;
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 0% 50%);
+}
+.polygon-border-vision {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0b0b0b 0%, #c70920 89%);
+  border: 2px solid red;
+  clip-path: polygon(10% 0, 0 50%, 10% 100%, 0 100%, 100% 100%, 100% 0%);
+}
+
+
+
+
+/* .polygon-border::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid rgba(255, 0, 0, 0.6);
+  clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%, 4% 50%);
+  clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%, 4% 50%);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.polygon-border:hover::before {
+  box-shadow: 0px 0px 25px rgba(255, 0, 0, 1);
+  border-color: rgba(255, 0, 0, 1);
+} */

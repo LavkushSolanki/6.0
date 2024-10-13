@@ -1,0 +1,244 @@
+/* Event Grid Styling */
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  max-width: 1450px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Event Card Styling */
+.event-card {
+  background-color: #000000;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.event-card:hover {
+  transform: scale(1.06);
+}
+
+/* Responsive Poster */
+.event-poster {
+  width: 100%; /* Full width of the parent container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+/* Event Details */
+.event-details {
+  padding: 10px;
+}
+
+.event-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #db0c26;
+}
+
+/* .event-date {
+  font-size: 14px;
+  color: #DDD;
+  margin: 5px 0;
+} */
+
+.event-description {
+  font-size: 16px;
+  color: #eee;
+}
+
+/* Explore Button */
+.explore-button {
+  background-color: #c4a287;
+  border: 3px solid #7b070b;
+  width: 50%;
+  font-size: 20px;
+  padding: 8px 25px;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 25px;
+  transition: background-color 0.5s ease;
+  margin: 8px 0;
+}
+/* .explore-button {
+  margin-top: 10px;
+  width: 50%;
+  padding: 8px 19px;
+  font-size: 20px;
+} */
+
+
+.explore-button:hover {
+  background-color: #7b070b;
+  border: none;
+}
+
+/* Event Details Page */
+.event-details-page {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.event-details-poster {
+  width: 60%;
+  border-radius: 8px;
+}
+
+.event-details-date {
+  font-size: 24px;
+  color: #ddd;
+}
+
+.event-details-description {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* General Tablet (768px to 1024px, includes iPads) */
+@media (max-width: 1024px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns for iPads */
+    padding: 10px;
+  }
+
+  .event-poster {
+    height: auto; /* Ensure it scales with aspect ratio */
+    width: 100%; /* Full width of the parent container */
+  }
+
+  .explore-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .event-details-poster {
+    width: 80%;
+  }
+}
+
+/* iPad Pro (1024px to 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .event-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for larger tablets */
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .event-poster {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .explore-button {
+    margin-top: 10px;
+    width: 50%;
+    padding: 8px 19px;
+    font-size: 20px;
+  }
+
+
+  .event-details-poster {
+    width: 75%;
+  }
+}
+
+/* iPad Air Portrait (820px to 1180px) */
+@media (min-width: 820px) and (max-width: 1180px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    padding: 15px;
+    gap: 40px;
+  }
+
+  .event-poster {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .explore-button {
+    margin-top: 10px;
+    width: 50%;
+    padding: 8px 19px;
+    font-size: 20px;
+  }
+
+
+  .event-details-poster {
+    width: 70%;
+  }
+}
+
+/* Mobile Phones (Max width: 768px) */
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 40px;
+  }
+
+  .event-poster {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .explore-button {
+    margin-top: 10px;
+    width: 50%;
+    padding: 8px 19px;
+    font-size: 20px;
+  }
+
+  .event-details-poster {
+    width: 80%;
+  }
+}
+
+/* Small Mobile (Max width: 480px) */
+@media (max-width: 480px) {
+  .event-grid {
+    margin-top: 20px;
+  }
+
+  .event-poster {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .event-details h3 {
+    font-size: 30px;
+  }
+
+  .explore-button {
+    margin-top: 10px;
+    width: 50%;
+    padding: 8px 19px;
+    font-size: 20px;
+  }
+
+  .event-details-poster {
+    width: 100%; /* Full width of the screen */
+  }
+
+  /* .event-details-date {
+    font-size: 14px;
+  } */
+
+  .event-details-description {
+    font-size: 16px;
+  }
+}

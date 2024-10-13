@@ -1,6 +1,7 @@
 .accordion-container {
   width: 90%;
-  margin: 50px auto;
+  height: auto;
+  margin: auto;
   background-color: #111;
   color: #fff;
   padding: 20px;
@@ -9,10 +10,11 @@
 }
 
 /* Heading styles */
-h1 {
+.accordion-container h1 {
   text-align: center;
   color: #e50914;
   font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .accordion-item {
@@ -21,8 +23,7 @@ h1 {
 }
 
 .accordion-header {
-  height: 20px;
-  padding: 10px auto;
+  padding: 10px 15px; /* Adjusted padding for better responsiveness */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,13 +31,14 @@ h1 {
   cursor: pointer;
   font-size: 1.2em;
   transition: background 0.3s ease;
+  height: auto; /* Height set to auto for flexibility */
 }
 
 .accordion-header:hover {
   background-color: #444;
 }
 
-span {
+.accordion-header span {
   font-size: 40px;
 }
 
@@ -68,20 +70,26 @@ span {
     padding: 0px;
   }
 
-  h1 {
+  .accordion-container h1 {
     margin: 0px 0px 10px 0px;
   }
 
   .accordion-header {
-    height: 40px;
-    font-size: 1em; /* Smaller font size for mobile */
+    height: 60px;
+    font-size: 1em;
+    padding: 8px 10px; /* Reduced padding for small screens */
+  }
+  .accordion-header h3 {
+    font-size: 15px; 
   }
 
-  span {
+  .accordion-header span {
     font-size: 25px; /* Smaller icon size */
   }
 
   .accordion-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
     padding: 15px;
   }
 }
@@ -93,16 +101,16 @@ span {
     padding: 15px;
   }
 
-  h1 {
+  .accordion-container h1 {
     font-size: 1.8em;
   }
 
   .accordion-header {
     font-size: 1.1em;
-    padding: 15px;
+    padding: 10px 12px;
   }
 
-  span {
+  .accordion-header span {
     font-size: 30px;
   }
 
@@ -118,16 +126,16 @@ span {
     padding: 20px;
   }
 
-  h1 {
+  .accordion-container h1 {
     font-size: 2em;
   }
 
   .accordion-header {
     font-size: 1.2em;
-    padding: 20px;
+    padding: 15px;
   }
 
-  span {
+  .accordion-header span {
     font-size: 35px;
   }
 
@@ -142,7 +150,7 @@ span {
     width: 80%;
   }
 
-  h1 {
+  .accordion-container h1 {
     font-size: 2.2em;
   }
 
@@ -151,7 +159,7 @@ span {
     padding: 20px;
   }
 
-  span {
+  .accordion-header span {
     font-size: 40px;
   }
 

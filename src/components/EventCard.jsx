@@ -1,17 +1,24 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./Event.css";
 
-const EventCard = ({ posterUrl, eventTitle, eventDate, eventDescription, url }) => {
+const EventCard = ({
+  posterUrl,
+  eventTitle,
+  eventDate,
+  eventDescription,
+  url,
+}) => {
   const navigate = useNavigate();
 
   const handleExploreClick = () => {
-    window.open(url, '_blank');  // Open in a new tab/window
+    window.open(url, "_blank"); // Open in a new tab/window
   };
 
   // Navigate in the same tab/window
-//   const handleExploreClick = () => {
-//     window.location.href = url;  
-// };
+  //   const handleExploreClick = () => {
+  //     window.location.href = url;
+  // };
 
   return (
     <div className="event-card">
