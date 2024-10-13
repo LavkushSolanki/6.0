@@ -1,12 +1,10 @@
-// script.js
-
 // Array of background images (3 images)
 const backgroundImages = [
   '../assets/images/background.png', // Add your image paths
   '../assets/images/background2.png',
-  '../assets/images/background3.png', // Ensure this is the third image
-  '../assets/images/background4.png', // Ensure this is the third image
-  '../assets/images/background5.png', // Ensure this is the third image
+  '../assets/images/background3.png', 
+  '../assets/images/background4.png', 
+  '../assets/images/background5.png', 
 ];
 
 let currentBackgroundIndex = 0; // Initialize the index
@@ -29,8 +27,7 @@ function changeBackgroundImage() {
 }
 
 // Start changing the background image
-setInterval(changeBackgroundImage, 5000); // Change interval to 10000 milliseconds (10 seconds)
-
+setInterval(changeBackgroundImage, 5000);
 // Flip image functionality
 const flipImage = document.getElementById("flipImage");
 let hasFlipped = false; // A flag to check if the flip has already occurred

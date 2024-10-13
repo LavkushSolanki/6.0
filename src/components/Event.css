@@ -27,9 +27,9 @@
 
 /* Responsive Poster */
 .event-poster {
-  width: 100%; /* Full width of the parent container */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
+  width: 100%;
+  height: auto; 
+  object-fit: cover; 
 }
 
 /* Event Details */
@@ -117,8 +117,8 @@
   }
 
   .event-poster {
-    height: auto; /* Ensure it scales with aspect ratio */
-    width: 100%; /* Full width of the parent container */
+    height: auto; 
+    width: 100%; 
   }
 
   .explore-button {
@@ -140,8 +140,8 @@
   }
 
   .event-poster {
-    width: 100%; /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto;
   }
 
   .explore-button {
@@ -166,8 +166,8 @@
   }
 
   .event-poster {
-    width: 100%; /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   .explore-button {
@@ -192,8 +192,8 @@
   }
 
   .event-poster {
-    width: 100%; /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   .explore-button {
@@ -215,8 +215,8 @@
   }
 
   .event-poster {
-    width: 100%; /* Full width of the parent container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 
   .event-details h3 {
@@ -231,7 +231,7 @@
   }
 
   .event-details-poster {
-    width: 100%; /* Full width of the screen */
+    width: 100%; 
   }
 
   /* .event-details-date {

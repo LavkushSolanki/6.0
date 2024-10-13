@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #c4a287;
 }
+
 body, html {
   margin: 0;
   padding: 0;
@@ -12,12 +13,13 @@ body, html {
   font-style: normal;
   background: linear-gradient(to bottom, #4e030d 0%, #a41e30 50%, #030303 100%);
   display: flex;
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
-  text-align: center; /* Ensures full height on all devices */
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
+
 .wrapper {
-  position: relative; /* Establishes a containing block for absolutely positioned elements */
+  position: relative; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,19 +32,18 @@ body, html {
 }
 
 .title {
-  letter-spacing: 5px; /* Adds 5px space between letters in the heading */
+  letter-spacing: 5px; 
   word-spacing: 15px;
   font-size: 30px;
   margin-top: 20px;
 }
+
 .highlight {
   margin-left: 5px;
-  /* background-color: rgb(87, 5, 5);  */
-  color: black; /* Black text color for 2024 */
-  padding: 0 10px; /* Adds space around the text */
-  border-radius: 5px; /* Optional: Rounded corners */
+  color: black; 
+  padding: 0 10px; 
+  border-radius: 5px; 
 }
-
 
 img {
   border: 4px solid #c4a287;
@@ -51,33 +52,31 @@ img {
   height: 550px;
   width: 490px;
   border-radius: 20px;
-  transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 img.flipping {
-  transform: scaleX(-1); /* Flip the image horizontally */
-  opacity: 0; /* Fade out the current image */
+  transform: scaleX(-1);
+  opacity: 0;
 }
-.mask{
+
+.mask {
   border: none;
 }
+
 #back {
   position: absolute;
   opacity: 0.5;
   top: -170px;
   left: 50%;
-  transform: translateX(-50%); /* Centers the image horizontally */
-  z-index: 0; /* Pushes the image behind the text */
-  width: 100%; /* Make it larger to cover background */
+  transform: translateX(-50%);
+  z-index: 0;
+  width: 100%;
   height: auto;
   border: none;
   transition: opacity 1s ease;
 }
 
-/* .title, .desc, .rules, button {
-  position: relative; 
-  z-index: 1;
-} */
 h2 {
   font-size: 50px;
   letter-spacing: 3px;
@@ -85,13 +84,13 @@ h2 {
 }
 
 .desc {
-  line-height: 1.8; /* Adjust the number for more or less spacing */  
+  line-height: 1.8;
   border-radius: 20px;
   width: 100%;
   border: 4px solid #c4a287;
   font-size: 25px;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.2); /* Add some background color */
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -109,16 +108,16 @@ h2 {
   font-size: 25px;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.2);
-  margin: 20px 0; /* Add some vertical spacing */
+  margin: 20px 0;
 }
 
 .rules ul {
-  line-height: 1.8; 
+  line-height: 1.8;
   text-align: left;
-  /* list-style-type: upper-roman; Use upper roman numerals for the list */
-  padding-left: 20px; 
+  padding-left: 20px;
 }
-#registerButton{
+
+#registerButton {
   font-family: 'Anton SC', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -126,119 +125,104 @@ h2 {
 }
 
 button {
-  background-color: #b30a20; /* Button background color */
-  color: #c4a287; /* Text color */
+  background-color: #b30a20;
+  color: #c4a287;
   margin: 20px;
-  padding: 10px 20px; /* Padding inside the button */
-  font-size: 30px; /* Font size */
-  border: none; /* Remove border */
-  border-radius: 15px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, transform 0.5s ease; /* Smooth hover effect with scaling */
-  display: inline-block; /* Ensures the button takes only the width needed */
+  padding: 10px 20px;
+  font-size: 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.5s ease;
+  display: inline-block;
 }
 
 button:hover {
-  background-color:  #660a19; /* Change color on hover */
-  color: #c4a287; /* Change text color on hover */
-  transform: scaleX(1.15); /* Stretch the button in the X direction */
+  background-color: #660a19;
+  color: #c4a287;
+  transform: scaleX(1.15);
 }
 
-
-/* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
   img {
     width: 90%;
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
   }
   #back {
     display: none;
   }
-
   .desc {
-    width: 90%; /* Adjust the width */
+    width: 90%;
     font-size: 18px;
   }
-
   h2 {
-    font-size: 36px; /* Reduce title size for smaller screens */
+    font-size: 36px;
   }
-
   .rules {
-    width: 90%; /* Full width for smaller screens */
-    font-size: 20px; /* Smaller font size for rules */
-    padding: 20px; /* Adjust padding */
+    width: 90%;
+    font-size: 20px;
+    padding: 20px;
   }
   .rules ul {
-    padding-left: 30px; 
+    padding-left: 30px;
   }
-
   button {
-    font-size: 24px; /* Smaller button font size */
-    padding: 10px 15px; /* Adjust padding */
+    font-size: 24px;
+    padding: 10px 15px;
   }
 }
 
 @media (max-width: 480px) {
   img {
-    width: 100%; /* Full width for small devices */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
   }
   #back {
     display: none;
   }
-
   .desc {
-    width: 95%; /* Slightly adjust the width */
-    font-size: 16px; /* Smaller font size */
+    width: 95%;
+    font-size: 16px;
   }
-
   h2 {
-    font-size: 30px; /* Further reduce title size */
+    font-size: 30px;
   }
   .rules ul {
-    padding-left: 30px; 
+    padding-left: 30px;
   }
   .rules {
-    width: 95%; /* Adjust width for small screens */
-    font-size: 18px; /* Further reduce font size */
-    padding-left: 15px; /* Further reduce padding */
+    width: 95%;
+    font-size: 18px;
+    padding-left: 15px;
   }
-
-
   button {
-    font-size: 22px; /* Smaller button font size */
-    padding: 10px 12px; /* Adjust padding */
+    font-size: 22px;
+    padding: 10px 12px;
   }
 }
 
-/* Adjustments for iPads (Mini, Air, Pro) */
 @media (min-width: 768px) and (max-width: 1024px) {
   img {
-    width: 80%; /* Adjust width for tablets */
-    height: auto; /* Maintain aspect ratio */
+    width: 80%;
+    height: auto;
   }
   #back {
     display: none;
   }
-
   .desc {
-    width: 80%; /* Adjust the width */
-    font-size: 19px; /* Adjust font size */
+    width: 80%;
+    font-size: 19px;
   }
-
   h2 {
-    font-size: 40px; /* Title size for tablets */
+    font-size: 40px;
   }
-
   .rules {
-    width: 80%; /* Adjust width for tablets */
-    font-size: 22px; /* Adjust font size for rules */
-    padding: 25px; /* Adjust padding for rules */
+    width: 80%;
+    font-size: 22px;
+    padding: 25px;
   }
-
   button {
-    font-size: 26px; /* Adjust button font size */
-    padding: 12px 18px; /* Adjust padding */
+    font-size: 26px;
+    padding: 12px 18px;
   }
 }
