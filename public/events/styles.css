@@ -74,7 +74,7 @@ img.flipping {
   width: 100%;
   height: auto;
   border: none;
-  transition: opacity 1s ease;
+  transition: opacity 1.5s ease-in-out;
 }
 
 h2 {

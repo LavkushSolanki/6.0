@@ -23,7 +23,7 @@ function changeBackgroundImage() {
 
       // Fade in the new image
       backImage.style.opacity = '0.5'; // Set opacity back to 1
-  }, 1000); // Match the timeout duration to the CSS transition duration (1 second)
+  }, 1500); // Match the timeout duration to the CSS transition duration (1 second)
 }
 
 // Start changing the background image
