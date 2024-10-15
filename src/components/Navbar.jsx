@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full py-3 flex justify-center items-center z-30 fixed top-0 bg-black bg-opacity-50 backdrop-blur-md">
+    <header className="w-full py-2 md:py-2 flex justify-center items-center z-30 fixed top-0 bg-black bg-opacity-50 backdrop-blur-md">
       <nav className="flex justify-between items-center w-full max-w-7xl px-4">
         {/* Left Polygonal Section */}
         <div className="hidden md:block relative w-1/3">
@@ -42,7 +42,11 @@ const Navbar = () => {
         {/* Center Logo */}
         <div className="flex items-center justify-center w-1/3">
           <a href="/" className="text-3xl font-bold">
-            <img src={logo3} alt="Logo" className="h-16 w-auto" />
+            <img
+              src={logo3}
+              alt="Logo"
+              className="h-12 w-auto md:h-12" // Reduced height for mobile, larger for md+
+            />
           </a>
         </div>
 
