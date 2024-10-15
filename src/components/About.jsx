@@ -11,7 +11,7 @@ export const About = () => {
         <div className="md:w-1/2 w-full flex items-center justify-center p-4">
           <iframe
             style={{
-              boxShadow: "12px 12px 0px rgba(0, 0, 0, 0.9)",
+              boxShadow: "12px 12px 18px rgba(0, 0, 0, 0.9)",
             }}
             width="560"
             height="315"

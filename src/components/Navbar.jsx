@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu, FiX } from "react-icons/fi"; // For hamburger and close icons
-import logo from "/assets/images/logo/logo.png"; // Your logo file path(EFEST 6.0)
-import logo2 from "/assets/images/logo/SPARK COLOUR BLACK.png";
-import logo3 from "/assets/images/logo/SPARK COLOUR WHITE.png";
+import logo3 from "/assets/images/logo/SPARK COLOUR WHITE.png"; // Ensure the path is correct
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full py-3 flex justify-center items-center z-30 fixed top-0">
+    <header className="w-full py-3 flex justify-center items-center z-30 fixed top-0 bg-black bg-opacity-50 backdrop-blur-md">
       <nav className="flex justify-between items-center w-full max-w-7xl px-4">
         {/* Left Polygonal Section */}
         <div className="hidden md:block relative w-1/3">
@@ -94,7 +92,6 @@ const Navbar = () => {
             }}
             className="absolute top-0 left-0 h-screen w-full z-40 md:hidden"
           >
-            {/* Hamburger Close Button */}
             <ul className="flex flex-col items-center justify-center h-full space-y-6">
               {["Home", "About", "Events", "Glims", "Team", "Contact"].map(
                 (item, idx) => (

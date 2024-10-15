@@ -13,7 +13,7 @@ export const Vision = () => {
         <div className="md:w-1/2 w-full flex items-center justify-center p-4">
           <img
             style={{
-              boxShadow: "-9px 9px 0px rgba(0, 0, 0, 0.9)",
+              boxShadow: "-9px 9px 18px rgba(0, 0, 0, 0.9)",
             }}
             className="rounded-3xl w-[300px] h-[200px] lg:w-[560px] lg:h-[315px] transform-image"
             width="560"
