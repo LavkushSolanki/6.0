@@ -20,7 +20,7 @@ import EventCard from "./components/EventCard";
 import EventDetails from "./components/EventDetails";
 import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Highlights from "./components/Highlights"
 
 // Sample event data
@@ -144,7 +144,7 @@ function App() {
                   </div>
                   <br />
                   {/* Can add more questions */}
-                  <Footer />
+                  {/* <Footer /> */}
                 </>
               }
             />
