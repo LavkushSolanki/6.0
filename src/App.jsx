@@ -20,6 +20,8 @@ import EventCard from "./components/EventCard";
 import EventDetails from "./components/EventDetails";
 import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
+import Highlights from "./components/Highlights"
 
 // Sample event data
 const eventData = [
@@ -120,6 +122,7 @@ function App() {
                     ))}
                   </div>
                   <br />
+                  <Highlights />
                   <Members />
                   <br />
 
@@ -141,6 +144,7 @@ function App() {
                   </div>
                   <br />
                   {/* Can add more questions */}
+                  <Footer />
                 </>
               }
             />
