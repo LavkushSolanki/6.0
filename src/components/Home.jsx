@@ -7,27 +7,19 @@ const Home = () => {
     <div className="home-container">
       {/* First div container */}
       <div className="first-container">
-        <h1>First Section</h1>
-        <p>This is the first section of the page.</p>
-
-        {/* New div inside first container with an image */}
              <ParticlesComponent id="particles" />
       </div>
 
-      {/* Second div container with Particles */}
+      {/* Second div container */}
       <div className="second-container">
-        {/* Apply ParticlesComponent only here */}
-        {/* <ParticlesComponent id="particles" /> */}
         <div className="text-content">
-          <h1>Second Section with Particles</h1>
-          <p>This section has particles in the background.</p>
+            <p>this section will be mask with gun moving with scroll </p>
         </div>
       </div>
 
       {/* Third div container */}
       <div className="third-container">
-        <h1>Third Section</h1>
-        <p>This is the third section of the page.</p>
+        <p>This is the third section will be having an bubble particles</p>
       </div>
     </div>
   );

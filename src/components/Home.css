@@ -22,13 +22,9 @@
     z-index: 0;
   }
   
-  /* Background colors for each section */
-  /* .first-container {
-    background-color: lightgray;
-  } */
   
   .second-container {
-    background-color: black;
+    /* background-color: black; */
     position: relative;
   }
   
@@ -40,22 +36,8 @@
   
   /* Third container style */
   .third-container {
-    background-color: lightblue;
+    background-color: black;
   }
-  
-  /* Particles should cover the second container fully */
-  .second-container canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-  }
-  
   /* Ensure the image has proper z-index and positioning */
-  img {
-    position: relative;
-    z-index: 2;
-  }
+
   

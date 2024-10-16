@@ -65,6 +65,7 @@ const ParticlesComponent = (props) => {
       style: {
         position:"absolute",
         height: "100vh",
+        width: "25%",
       },
       particles: {
         color: {
