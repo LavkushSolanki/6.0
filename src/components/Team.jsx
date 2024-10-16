@@ -2,7 +2,7 @@ import React from "react";
 
 const Team = () => {
   return (
-    <div className="relative h-screen overflow-hidden flex justify-center items-center">
+    <div className="relative h-screen overflow-hidden  flex justify-center items-center">
       {/* Main Image in the Foreground */}
       <div className="relative z-10">
         <img

@@ -83,7 +83,7 @@ function App() {
     // Loader timeout for 8 seconds before showing main content
     setTimeout(() => {
       setScreenLoading(false);
-    }, 9500);
+    }, 7000);
   }, []);
 
   return (
