@@ -65,7 +65,7 @@ const ParticlesComponent = (props) => {
       style: {
         position:"absolute",
         height: "100vh",
-        width: "25%",
+        width: "100%",
       },
       particles: {
         color: {
@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 500, // Increased value for more particles
+          value: 400, // Increased value for more particles
         },
         opacity: {
           value: 1.0,
