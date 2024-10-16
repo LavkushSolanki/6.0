@@ -1,0 +1,61 @@
+/* Set up the home-container to display its children horizontally */
+.home-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Each container should take equal width */
+  .first-container,
+  .second-container,
+  .third-container {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 0;
+  }
+  
+  /* Background colors for each section */
+  /* .first-container {
+    background-color: lightgray;
+  } */
+  
+  .second-container {
+    background-color: black;
+    position: relative;
+  }
+  
+  /* Ensure text appears over the particles */
+  .text-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Third container style */
+  .third-container {
+    background-color: lightblue;
+  }
+  
+  /* Particles should cover the second container fully */
+  .second-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  /* Ensure the image has proper z-index and positioning */
+  img {
+    position: relative;
+    z-index: 2;
+  }
+  

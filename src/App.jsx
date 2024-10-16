@@ -23,6 +23,8 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Highlights from "./components/Highlights"
 import Sponsors from "./components/Sponsors";
+import ParticlesComponent from "./components/Particles";
+import Home from "./components/Home";
 
 // Sample event data
 const eventData = [
@@ -99,9 +101,7 @@ function App() {
                 <>
                   <Navbar />
                   {/* Ensure enough space between elements */}
-                  <br />
-                  <br />
-                  <br />
+                  <Home />
                   <br />
                   <About />
                   <br />
