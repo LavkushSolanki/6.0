@@ -5,7 +5,7 @@ const Members = () => {
   return (
     <div
       id="team"
-      className="w-full h-screen flex items-center justify-center bg-cover bg-black bg-center"
+      className="w-full h-full flex items-center justify-center bg-cover bg-black bg-center"
     >
       <div className="relative flex items-center justify-center">
         <img
