@@ -23,6 +23,11 @@
 }
 
 /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .loader-video {
+        object-fit: contain;
+    }
+}
 @media (max-width: 767px) {
     .loader-video {
         object-fit: contain;
