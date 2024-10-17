@@ -7,12 +7,14 @@
   max-width: 1450px;
   margin: 0 auto;
   justify-items: center;
+
 }
 
 /* Event Card Styling */
 .event-card {
   background-color: #000000;
   overflow: hidden;
+  border: 2px solid white;
   border-radius: 15px;
   transition: transform 0.5s ease;
   text-align: center;
@@ -20,6 +22,7 @@
   flex-direction: column;
   width: 100%;
 }
+
 
 .event-card:hover {
   transform: scale(1.06);
@@ -111,6 +114,9 @@
 
 /* General Tablet (768px to 1024px, includes iPads) */
 @media (max-width: 1024px) {
+  .event-card {
+    border: 2px solid white;
+  }
   .event-grid {
     grid-template-columns: 1fr 1fr; /* Two columns for iPads */
     padding: 10px;
@@ -133,6 +139,9 @@
 
 /* iPad Pro (1024px to 1366px) */
 @media (min-width: 1024px) and (max-width: 1366px) {
+  .event-card {
+    border: 2px solid white;
+  }
   .event-grid {
     grid-template-columns: repeat(2, 1fr); /* Two columns for larger tablets */
     gap: 30px;
@@ -159,6 +168,9 @@
 
 /* iPad Air Portrait (820px to 1180px) */
 @media (min-width: 820px) and (max-width: 1180px) {
+  .event-card {
+    border: 2px solid white;
+  }
   .event-grid {
     grid-template-columns: 1fr 1fr; /* Two columns */
     padding: 15px;
@@ -183,8 +195,12 @@
   }
 }
 
+
 /* Mobile Phones (Max width: 768px) */
 @media (max-width: 768px) {
+  .event-card {
+    border: 2px solid white;
+  }
   .event-grid {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -210,6 +226,12 @@
 
 /* Small Mobile (Max width: 480px) */
 @media (max-width: 480px) {
+  .event-card {
+    width: 90%;
+    height: 400px;
+      border: 2px solid white;
+    background: url('/assets/images/logo/cardbggpng.png')no-repeat center center;
+  }
   .event-grid {
     margin-top: 20px;
   }
