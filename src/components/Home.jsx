@@ -5,7 +5,7 @@ import Home_Center from "./Home_center"
 
 const Home = () => {
   return (
-    <div className="home-container ">
+    <div id="home" className="home-container ">
       <div className={(window.innerWidth < 400)?"flex-none":"first-container" }>
         <ParticlesComponent id="particles" />
       </div>
