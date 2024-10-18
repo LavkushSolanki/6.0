@@ -21,6 +21,7 @@ const EventCard = ({
   // };
 
   return (
+    
     <div className="event-card">
       <img src={posterUrl} alt={eventTitle} className="event-poster" />
       <div className="event-details">

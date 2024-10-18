@@ -18,8 +18,6 @@ import Sponsorship from "./components/Team/Sponsorship";
 import Logistics from "./components/Team/Logistics";
 import Navbar from "./components/Navbar";
 import Accordion from "./components/Accordion";
-import EventCard from "./components/EventCard";
-import EventDetails from "./components/EventDetails";
 import { Loader } from "./components/Loader";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
@@ -28,58 +26,6 @@ import Sponsors from "./components/Sponsors";
 import ParticlesComponent from "./components/Particles";
 import Home from "./components/Home";
 import Swipe from "./components/Swipe";
-
-// Sample event data
-const eventData = [
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Ideathon', // Uncomment this if you want to use event titles
-    // eventDate: '15th October 2024', // Uncomment this if you have event dates
-    url: "./events/ideathon.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Build-a-Thon',
-    // eventDate: '16th October 2024',
-    url: "./events/build-a-thon.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Ad-Mad Show',
-    // eventDate: '18th October 2024',
-    url: "./events/ad_mad_show.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Panel Discussion',
-    // eventDate: '20th October 2024',
-    url: "./events/panel_discussion.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Start-Up Pitch',
-    // eventDate: '21st October 2024',
-    url: "./events/start_up_pitch.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Case Study',
-    // eventDate: '22nd October 2024',
-    url: "./events/case_study.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'Bidding War',
-    // eventDate: '23rd October 2024',
-    url: "./events/bidding_war.html",
-  },
-  {
-    posterUrl: "/assets/images/img2.jpg",
-    // eventTitle: 'The Sales Challenge',
-    // eventDate: '24th October 2024',
-    url: "./events/the_sales_challenge.html",
-  },
-];
 
 function App() {
   const [screenLoading, setScreenLoading] = useState(true);
@@ -111,25 +57,11 @@ function App() {
                   <Vision />
                   <br />
                   <br />
-
-                  {/* Event Cards Section */}
-                  <div className="event-grid">
-                    {eventData.map((event, index) => (
-                      <EventCard
-                        key={index}
-                        posterUrl={event.posterUrl}
-                        eventTitle={event.eventTitle} // Make sure eventTitle exists in eventData
-                        eventDate={event.eventDate} // Make sure eventDate exists in eventData
-                        eventDescription={event.eventDescription} // Optional: Add event description if needed
-                        url={event.url} // Pass the event URL prop
-                      />
-                    ))}
-                  </div>
+                  <Swipe /> {/* Swipe component remains */}
                   <br />
-                  <Swipe />
-                  <br /><br />
+                  <br />
                   <Highlights />
-                  <Sponsors/>
+                  <Sponsors />
                   <Members />
                   <br />
 
@@ -150,7 +82,6 @@ function App() {
                     />
                   </div>
                   <br />
-                  {/* Can add more questions */}
                   <Footer />
                 </>
               }
@@ -169,11 +100,7 @@ function App() {
             <Route path="/Sponsorship" element={<Sponsorship />} />
             <Route path="/Logistics" element={<Logistics />} />
 
-            {/* Route for individual event details */}
-            <Route
-              path="/event/:eventTitle"
-              element={<EventDetails eventData={eventData} />}
-            />
+            {/* Remove the route for individual event details */}
           </Routes>
         </Router>
       )}

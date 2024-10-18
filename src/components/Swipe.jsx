@@ -60,6 +60,7 @@ const Swipe = () => {
 
   return (
     <div className="w-3/4 m-auto" id="events">
+            <h1 className="text-4xl font-bold text-center mb-6 text-white">Events</h1>
       <div className="mt-20">
         <Slider {...settings}>
           {data.map((d, index) => (
