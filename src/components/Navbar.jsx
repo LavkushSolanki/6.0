@@ -61,7 +61,7 @@ const Navbar = () => {
             }}
           >
             <div className="flex justify-around items-center px-4 py-2">
-              {["Glims", "Team", "Contact"].map((item, idx) => (
+              {["Glimpse", "Team", "Contact"].map((item, idx) => (
                 <Link
                   key={idx}
                   to={item.toLowerCase()}
