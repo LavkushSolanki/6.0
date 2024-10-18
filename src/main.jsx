@@ -7,7 +7,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div
       style={{
-        cursor: "url(/assets/images/logo/gun1.png), auto",
+        cursor: "url(/assets/images/logo/gun_supreme.png), auto",
         // background:
         //   "linear-gradient(90deg, rgba(201, 9, 32, 1) 0%, rgba(11, 11, 11, 1) 89%)",
         backgroundColor: "rgba(0,0,0,1)",

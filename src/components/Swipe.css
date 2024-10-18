@@ -1,0 +1,49 @@
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-dots li button:before {
+    content: ''; /* Ensure the :before pseudo-element is created */
+    display: block; /* Ensure it shows up */
+    width: 10px; /* Match the dot size */
+    height: 10px;
+    border-radius: 50%; /* Make it circular */
+    background-color: rgb(94, 93, 93); /* Set color to red */
+    position: absolute; /* Positioning to match the button */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .slick-dots li.slick-active button:after {
+    content: ''; /* Ensure the :after pseudo-element is created */
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white; /* Set color to white for the active dot */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .explore-buttonn {
+    background-color: #c4a287;
+    border: 3px solid #7b070b;
+    width: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 8px 0;
+    transition: background-color 0.5s ease;
+    
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensures text is centered */
+  }
+  
+  .explore-buttonn:hover {
+    background-color: #7b070b;
+    border: none;
+  }

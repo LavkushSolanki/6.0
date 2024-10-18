@@ -1,25 +1,19 @@
 import React from 'react';
 import './Home.css'; // Make sure to update your CSS
 import ParticlesComponent from "./Particles"; // Import the Particles component
+import Home_Center from "./Home_Center"
 
 const Home = () => {
   return (
-    <div className="home-container">
-      {/* First div container */}
-      <div className="first-container">
-             <ParticlesComponent id="particles" />
+    <div className="home-container ">
+      <div className={(window.innerWidth < 400)?"flex-none":"first-container" }>
+        <ParticlesComponent id="particles" />
       </div>
-
-      {/* Second div container */}
-      <div className="second-container">
-        <div className="text-content">
-            <p>this section will be mask with gun moving with scroll </p>
-        </div>
+      <div className='h-screen md:w-1/3 w-screen pt-6 '>
+        <Home_Center/>
       </div>
-
-      {/* Third div container */}
-      <div className="third-container">
-        <p>This is the third section will be having an bubble particles</p>
+      <div className={(window.innerWidth < 400)?"flex-none":"first-container"}>
+        <ParticlesComponent id="particles1" />
       </div>
     </div>
   );

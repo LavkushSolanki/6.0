@@ -1,4 +1,6 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { About } from "./components/About";
 import Members from "./components/Members";
 import { Vision } from "./components/Vision";
@@ -25,6 +27,7 @@ import Highlights from "./components/Highlights"
 import Sponsors from "./components/Sponsors";
 import ParticlesComponent from "./components/Particles";
 import Home from "./components/Home";
+import Swipe from "./components/Swipe";
 
 // Sample event data
 const eventData = [
@@ -123,6 +126,8 @@ function App() {
                     ))}
                   </div>
                   <br />
+                  <Swipe />
+                  <br /><br />
                   <Highlights />
                   <Sponsors/>
                   <Members />

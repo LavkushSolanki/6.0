@@ -64,7 +64,7 @@ const ParticlesComponent = (props) => {
       },
       style: {
         position:"absolute",
-        height: "100vh",
+        height: "full",
         width: "100%",
       },
       particles: {
@@ -92,7 +92,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 400, // Increased value for more particles
+          value: 200, // Increased value for more particles
         },
         opacity: {
           value: 1.0,
@@ -101,7 +101,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 },
+          value: { min: 1, max: 2 },
         },
       },
       detectRetina: true,
