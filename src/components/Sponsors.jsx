@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sponsors.css";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 const sponsorsData = [
   { id: 1, img: "/assets/images/sponsors/sp1.png" },
@@ -25,35 +25,14 @@ const Sponsors = () => {
       <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-8 md:mb-12 text-center text-white">
         Our Sponsors
       </h2>
-      <div className="relative overflow-hidden">
-        <div className="flex animate-scroll gap-6 w-full items-center">
-          {sponsorsData.map((sponsor) => (
-            <div
-              key={sponsor.id}
-              className="flex-shrink-0 bg-white p-4 rounded-lg shadow-lg"
-              style={{ minWidth: "150px" }} // Adjust width as per need
-            >
-              <img
-                src={sponsor.img}
-                alt={`Sponsor ${sponsor.id}`}
-                className="h-32 object-contain"
-              />
-            </div>
-          ))}
-          {/* Duplicate the elements to create the infinite effect */}
-          {sponsorsData.map((sponsor) => (
-            <div
-              key={`duplicate-${sponsor.id}`}
-              className="flex-shrink-0 bg-white p-4 rounded-lg shadow-lg"
-              style={{ minWidth: "150px" }}
-            >
-              <img
-                src={sponsor.img}
-                alt={`Sponsor ${sponsor.id}`}
-                className="h-32 object-contain"
-              />
-            </div>
-          ))}
+      <div className="flex justify-center w-full z-10 px-4 sm:px-6 lg:px-8">
+        <div className="w-full text-center">
+          <InfiniteMovingCards
+            items={sponsorsData}
+            direction="right"
+            speed="normal"
+            cardClassName="text-lg lg:text-2xl h-32 lg:h-100"
+          />
         </div>
       </div>
     </div>
