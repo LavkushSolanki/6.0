@@ -26,6 +26,7 @@ import Sponsors from "./components/Sponsors";
 import ParticlesComponent from "./components/Particles";
 import Home from "./components/Home";
 import Swipe from "./components/Swipe";
+//
 
 function App() {
   const [screenLoading, setScreenLoading] = useState(true);
