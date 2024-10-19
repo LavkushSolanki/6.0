@@ -68,7 +68,7 @@ export default function Highlights() {
     swipe: true,
   };
   return (
-    <div id="glims" className=" flex justify-start flex-col overflow-x-hidden bg-[#0000]  w-full h-full p-3">
+    <div id="glimpse" className=" flex justify-start flex-col overflow-x-hidden bg-[#0000]  w-full h-full p-3">
       <div className="w-screen h-40 flex flex-col justify-center items-center p-2 ">
         <img src="/assets/images/highlights/border.png" className="w-96" />
         <div className="flex gap-2 items-center">
