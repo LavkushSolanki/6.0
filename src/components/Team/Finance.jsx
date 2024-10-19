@@ -3,60 +3,34 @@ import "../Member.css"; // Import the CSS file
 
 const members = [
   {
-    name: "Piyush",
+    name: "Shaswat Tripathi",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/piyush.jpg",
+    img2: "assets/images/members/saswatcrop.JPG",
   },
   {
-    name: "Rahul",
+    name: "Shubham Kumar",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
+    img2: "assets/images/members/shubham.jpg",
   },
   {
-    name: "Ayushman",
+    name: "Piyush Praharaj",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
+    img2: "assets/images/members/piush2.JPG",
   },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  // Add more members here if needed
 ];
 
 const Finance = () => {
   return (
     <div>
-      {/* <h1 className="text-white text-center">Finance TEAM</h1> */}
+      <h1
+        className="text-center p-5 text-white text-7xl font-bold font-redressed lg:text-8xl"
+        id="team-text"
+      >
+        Fina<span className="text-red-500">nce</span>
+      </h1>{" "}
       <div className="grid-container">
         {members.map((member, index) => (
           <div className="flip-card" key={index}>
