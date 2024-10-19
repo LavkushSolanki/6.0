@@ -3,60 +3,22 @@ import "../Member.css"; // Import the CSS file
 
 const members = [
   {
-    name: "Piyush",
+    name:"Priyanshi Dubey",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/piyush.jpg",
+    img2: "assets/images/members/priyanshi2.JPG",
   },
-  {
-    name: "Rahul",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Ayushman",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  {
-    name: "Satyam",
-    year: "3rd year",
-    img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
-  },
-  // Add more members here if needed
 ];
 
 const Creative = () => {
   return (
     <div>
-      {/* <h1 className="text-white text-center">Creative TEAM</h1> */}
+      <h1
+        className="text-center p-5 text-white text-7xl font-bold font-redressed lg:text-8xl"
+        id="team-text"
+      >
+        Crea<span className="text-red-500">tive</span>
+      </h1>{" "}
       <div className="grid-container">
         {members.map((member, index) => (
           <div className="flip-card" key={index}>

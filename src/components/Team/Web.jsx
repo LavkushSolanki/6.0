@@ -18,19 +18,19 @@ const members = [
     name: "Ayushman Shaw",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
+    img2: "assets/images/members/icon.png",
   },
   {
     name: "Rahul Kumar Singh",
     year: "3rd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
+    img2: "assets/images/members/icon.png",
   },
   {
     name: "Satyam Sinha",
     year: "2nd year",
     img: "assets/images/members/m7.jpeg",
-    img2: "assets/images/members/agasty.JPG",
+    img2: "assets/images/members/icon.png",
   },
 ];
 

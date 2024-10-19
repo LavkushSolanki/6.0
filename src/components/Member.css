@@ -133,7 +133,7 @@
   position: relative;
   color: white;
   font-weight: bold;
-  background: linear-gradient(90deg, #0b0b0b 0%, #c70920 89%);
+  background: linear-gradient(90deg, #c70920 0%, #0b0b0b 89%);
   border: 2px solid red;
   clip-path: polygon(10% 0, 0 50%, 10% 100%, 0 100%, 100% 100%, 100% 0%);
 }
