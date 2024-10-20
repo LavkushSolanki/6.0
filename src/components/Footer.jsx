@@ -49,6 +49,10 @@ const Footer = () => {
               >
                 <FaInstagram />
               </a>
+              <a href="https://www.hitwebcounter.com" target="_blank">
+              <a href="https://www.hitwebcounter.com" target="_blank">
+              <img src="https://hitwebcounter.com/counter/counter.php?page=16950271&style=0001&nbdigits=5&type=page&initCount=20" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>   
+            </a>
             </div>
           </div>
 
